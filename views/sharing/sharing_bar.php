@@ -1,9 +1,9 @@
 <div class="cat-filters clearingfix" style="margin-top:20px;">
-	<strong><?php echo Kohana::lang('sharing_two.site_filter');?>
+	<h4><?php echo Kohana::lang('sharing_two.site_filter');?>
 		<span>[<a href="javascript:toggleLayer('sharing_switch_link','sharing_switch')" id="sharing_switch_link">
 			<?php echo Kohana::lang('ui_main.hide'); ?></a>]
 		</span>
-	</strong>
+	</h4>
 </div>
 		<ul id="sharing_switch" class="category-filters">
 			<li><a href="#" id="share_all" <?php if (Kohana::config('sharing_two.default_sharing_filter') == 'all') echo' class="active"'; ?>>
