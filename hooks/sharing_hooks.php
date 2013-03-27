@@ -50,7 +50,7 @@ class sharing_hooks {
 		{
 			Event::add('ushahidi_action.nav_admin_manage', array('Sharing','sharing_admin_nav'));
 		}
-		elseif (Router::$controller == "main")
+		elseif ( Router::$controller == "main" || Router::$controller == "inc" || Router::$controller == "interno") 
 		{
 			Event::add('ushahidi_action.header_scripts', array('Sharing', 'sharing_bar_js'));
 			Event::add('ushahidi_action.main_sidebar_post_filters', array('Sharing', 'sharing_bar'));
